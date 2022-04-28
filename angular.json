@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "kyleCV:build:production",
+            "firebaseProject": "singularityk-6d3d8",
+            "firebaseHostingSite": "singularityk-6d3d8"
+          }
         }
       }
     }

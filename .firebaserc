@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "singularityk-6d3d8": {
+      "hosting": {
+        "kyleCV": [
+          "singularityk-6d3d8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "singularityk-6d3d8"
+  }
+}
