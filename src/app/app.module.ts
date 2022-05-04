@@ -14,10 +14,16 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { MobileViewComponent } from './mobile-view/mobile-view.component';
+import { TabletViewComponent } from './tablet-view/tablet-view.component';
+import { DesktopViewComponent } from './desktop-view/desktop-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MobileViewComponent,
+    TabletViewComponent,
+    DesktopViewComponent
   ],
   imports: [
     BrowserModule,

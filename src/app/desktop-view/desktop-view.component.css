@@ -1,0 +1,86 @@
+
+
+
+
+.basicInfo {
+    background-color: rgba(252, 252, 252, 0.833);
+    width: 40%;
+    padding: calc(1vh + 1vw);
+    box-shadow: 1px 2px 1px 2px #6e6e6e15;
+    border-radius: .06cm;
+    margin-bottom: 1cm;
+}
+
+.summary {
+    background-color: rgba(252, 252, 252, 0.833);
+    width: 40%;
+    padding: calc(1vh + 1vw);
+    box-shadow: 1px 2px 1px 2px #6e6e6e15;
+    border-radius: .06cm;
+    margin-bottom: 1cm;
+}
+
+.workHistoryHeading {
+
+    padding: calc(.2vh + .2vw);
+
+    font-weight: 600;
+}
+
+.workInstance {
+    background-color: rgba(255, 255, 255, 0.538);
+    padding-left: .5vw;
+    padding-bottom: .1vw;
+
+    border-radius: .06cm;
+    box-shadow: 1px 2px 1px 2px #6e6e6e15;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: calc(1.5vh + 1vw);
+
+}
+
+.skillsCard {
+    background-color: rgba(252, 252, 252, 0.833);
+
+    padding: calc(1vh + 1vw);
+    box-shadow: 1px 2px 1px 2px #6e6e6e15;
+    border-radius: .06cm;
+    margin-bottom: 1cm;
+}
+
+.covid {
+    background: rgb(255, 23, 133);
+    background: linear-gradient(343deg, rgba(255, 23, 23, 0.429) 5%, rgba(255, 23, 62, 0.972) 100%);
+    padding: calc(1vw + 1vh);
+    border-radius: .06cm;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-weight: 800;
+    color: aliceblue;
+    margin-bottom: calc(1.5vh + 1vw);
+
+}
+
+.imageIcons {
+    width: calc(.6cm + 1.5vh);
+    height: calc(.6cm + 1.5vh);
+
+}
+
+.textAdjIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: .5vw;
+    font-weight: 700;
+}
+
+.stickyTopNav {
+    background-color: #1e262c;
+    width: auto;
+    height: 2cm;
+    margin: 2PX;
+    display: flex;
+    justify-content: space-around;
+    color: #c3c6ce;}
