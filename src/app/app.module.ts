@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,17 +19,27 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { MobileViewComponent } from './mobile-view/mobile-view.component';
 import { TabletViewComponent } from './tablet-view/tablet-view.component';
 import { DesktopViewComponent } from './desktop-view/desktop-view.component';
+import { ViewNexusComponent } from './view-nexus/view-nexus.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClntService } from './services/http-clnt.service';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MobileViewComponent,
     TabletViewComponent,
-    DesktopViewComponent
+    DesktopViewComponent,
+    ViewNexusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -37,10 +49,11 @@ import { DesktopViewComponent } from './desktop-view/desktop-view.component';
     provideMessaging(() => getMessaging()),
     providePerformance(() => getPerformance()),
     provideRemoteConfig(() => getRemoteConfig()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService,UserTrackingService, HttpClntService
   ],
   bootstrap: [AppComponent]
 })

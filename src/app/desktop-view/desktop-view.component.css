@@ -1,14 +1,22 @@
+.desktopWrap {
+    height: 100vh;
+    width: 100vw;
+}
 
-
-
+p {
+    margin: .5vh;
+    line-height: calc(.5cm + 1vh);
+}
 
 .basicInfo {
     background-color: rgba(252, 252, 252, 0.833);
-    width: 40%;
+    width: 30%;
     padding: calc(1vh + 1vw);
     box-shadow: 1px 2px 1px 2px #6e6e6e15;
     border-radius: .06cm;
     margin-bottom: 1cm;
+    display: flex;
+    width: 80%;
 }
 
 .summary {
@@ -77,10 +85,69 @@
 }
 
 .stickyTopNav {
+    position: fixed;
     background-color: #1e262c;
-    width: auto;
+    width: 100%;
     height: 2cm;
-    margin: 2PX;
+
     display: flex;
     justify-content: space-around;
-    color: #c3c6ce;}
+    color: #c3c6ce;
+}
+
+
+#navbarBackgroundAnimate {
+
+    position: absolute;
+    height: 20vw;
+    width: 100%;
+    background-color: #2d325c;
+
+
+}
+
+#selfie {
+    background-color: antiquewhite;
+    width: 22vw;
+    height: 22vw;
+    margin: 3cm;
+    display: flex;
+}
+
+
+
+#smallProfilePic {
+    height: 2cm;
+    width: 2cm;
+    position: fixed;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    padding-left: 1.5cm;
+}
+
+.iimage {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+
+
+H1 {
+    font-size: calc(.8cm + .2vw);
+    color: rgb(244, 250, 255);
+}
+
+:host {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .open-close-container {
+    border: 1px solid #dddddd;
+    margin-top: 1em;
+    padding: 20px 20px 0px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
